@@ -9,7 +9,15 @@
 </head>
 <body>
     <h1>Bienvenue sur le site de test (Version OPTIMISÉE)</h1>
-    <img src="large-image.webp" alt="Image optimisée" title="titre de l'image" width="2000" height="1200" loading="lazy">
+
+    <!-- Image responsive avec srcset et sizes -->
+    <picture>
+        <source srcset="image-400w.webp" media="(max-width: 400px)">
+        <source srcset="image-800w.webp" media="(max-width: 800px)">
+        <source srcset="image-1200w.webp" media="(max-width: 1200px)">
+        <img src="large-image.webp" alt="Image optimisée" title="titre de l'image" width="1200" height="800" loading="lazy">
+    </picture>
+
     <script defer src="optimized-script.js"></script>
 </body>
 </html>
