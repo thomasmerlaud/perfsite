@@ -1,17 +1,20 @@
+<!-- Version 2 : Site Moyennement Optimisé -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Lourd - Test de Performance</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="heavy-script.js"></script>
+    <title>Site Moyennement Optimisé - Test de Performance</title>
+    <link rel="stylesheet" href="style-medium.css">
+    <script defer src="medium-script.js"></script>
 </head>
 <body>
-    <h1>Bienvenue sur le site de test (Version LOURDE)</h1>
-    <img src="large-image.jpg" alt="Image lourde" width="2000" height="1200">
-    <script>
-        for(let i = 0; i < 100000000; i++) { }
-    </script>
+    <header>
+        <h1>Bienvenue sur Laguitoune.fr</h1>
+    </header>
+    <main>
+        <img src="large-image.webp" alt="Image compressée" width="2000" height="1200" loading="lazy">
+        <p>Ce site applique certaines optimisations mais peut encore être amélioré.</p>
+    </main>
 </body>
 </html>

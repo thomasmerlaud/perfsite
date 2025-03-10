@@ -1,3 +1,4 @@
+<!-- Version 3 : Site Full Optimisé -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Optimisé - Test de Performance</title>
     <link rel="stylesheet" href="style.min.css">
-    <style> body { font-family: Arial, sans-serif; } </style>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; padding: 20px; }
+        header { background: #0073e6; color: white; padding: 20px; border-radius: 10px; }
+        h1 { margin: 0; }
+        main { margin-top: 20px; }
+        img { max-width: 100%; height: auto; border-radius: 10px; }
+        p { font-size: 18px; color: #333; }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur le site de test (Version OPTIMISÉE)</h1>
-
-    <!-- Image responsive avec srcset et sizes -->
-    <picture>
-        <source srcset="image-400w.webp" media="(max-width: 400px)">
-        <source srcset="image-800w.webp" media="(max-width: 800px)">
-        <source srcset="image-1200w.webp" media="(max-width: 1200px)">
-        <img src="large-image.webp" alt="Image optimisée" title="titre de l'image" width="1200" height="800" loading="lazy">
-    </picture>
-
+    <header>
+        <h1>Bienvenue sur Laguitoune.fr</h1>
+    </header>
+    <main>
+        <img src="large-image.webp" alt="Image optimisée" width="2000" height="1200" loading="lazy">
+        <p>Ce site est optimisé pour un chargement rapide et une meilleure expérience utilisateur.</p>
+    </main>
     <script defer src="optimized-script.js"></script>
 </body>
 </html>

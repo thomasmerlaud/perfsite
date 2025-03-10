@@ -1,0 +1,24 @@
+<!-- Version 1 : Site Très Lourd (Worst Case Scenario) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Très Lourd - Test de Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="heavy-script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Laguitoune.fr</h1>
+    </header>
+    <main>
+        <img src="large-image.jpg" alt="Image lourde" width="2000" height="1200">
+        <p>Ce site est un exemple extrême de mauvaise optimisation.</p>
+    </main>
+    <script>
+        for(let i = 0; i < 100000000; i++) { }
+    </script>
+</body>
+</html>
